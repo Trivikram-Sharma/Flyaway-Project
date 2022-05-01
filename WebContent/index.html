@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login Page</title>
+<style> 
+h3{background-color : green;color:white}
+header,nav{background-color: green; color:white}
+a{color:blue; background-color:silver}
+body{background-color : royal-blue;text-align: center}
+</style>
+</head>
+<body>
+<nav>
+	<header><b>WELCOME TO FLYAWAY.COM</b></header>
+	<a href="change-password.jsp">CHANGE PASSWORD</a> ||
+	<a href="registration-page.html">Registration</a>
+	</nav>
+	<h3>Admin Login Page</h3>
+		<fieldset>
+			<legend align="center">Admin Login</legend>
+			<form action="LoginServlet" method="post">
+				<label for="userName">UserName</label>
+				<input type="text" name="userName" id="userName"><br />
+				<label for="pwd">Password</label>
+				<input type="password" name="pwd" id="pwd"> <br />
+				<input type="Submit" value="Sign In">
+			</form>
+		</fieldset>
+		<a href="homepage.jsp">Click Here to search flights</a>
+</body>
+</html>
